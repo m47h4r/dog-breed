@@ -1,0 +1,16 @@
+.breed {
+    border: 1px solid black;
+}
+
+.sub-breed {
+    border: 1px solid black;
+}
+
+.entity {
+    border: 1px solid black;
+}
+
+.breed, .sub-breed, .entity {
+    padding: 5px;
+    margin: 5px;
+}
