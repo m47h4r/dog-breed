@@ -1,13 +1,14 @@
 import React from "react";
 
+import "./Index.css";
+
 import Header from "../components/Header";
 
-function Index () {
+function Index() {
   return (
-    <>
+    <div className="index-wrapper">
       <Header />
-      <p>i am the Index component</p>
-    </>
+    </div>
   );
 }
 

@@ -1,8 +1,10 @@
 import React from "react";
 
+import "./List.css";
+
 import Header from "../components/Header";
 
-function List () {
+function List() {
   return (
     <>
       <Header />
