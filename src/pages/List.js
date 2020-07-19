@@ -1,8 +1,13 @@
 import React from "react";
 
+import Header from "../components/Header";
+
 function List () {
   return (
-    <p>i am the breedlist component</p>
+    <>
+      <Header />
+      <p>i am the breedlist component</p>
+    </>
   );
 }
 

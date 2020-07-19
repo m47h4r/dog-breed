@@ -1,0 +1,15 @@
+:root {
+  --white: #e4e3e3;
+  --shade-1: #84a9ac;
+  --shade-2: #3b6978;
+  --black: #204051;
+  --transition-duration: .5s;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,9 +1,13 @@
 import React from "react";
 import { Link as RouterLink } from "react-router-dom";
 
-function Link ({ children, ...props }) {
+import "./Link.css";
+
+function Link({ children, ...props }) {
   return (
-    <RouterLink {...props}>{children}</RouterLink>
+    <RouterLink className="link" {...props}>
+      {children}
+    </RouterLink>
   );
 }
 

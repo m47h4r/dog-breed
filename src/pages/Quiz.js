@@ -1,8 +1,13 @@
 import React from "react";
 
+import Header from "../components/Header";
+
 function Quiz () {
   return (
-    <p>i am the BreedQuiz component</p>
+    <>
+      <Header />
+      <p>i am the BreedQuiz component</p>
+    </>
   );
 }
 

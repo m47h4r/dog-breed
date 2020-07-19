@@ -1,8 +1,13 @@
 import React from "react";
 
+import Header from "../components/Header";
+
 function Index () {
   return (
-    <p>i am the Index component</p>
+    <>
+      <Header />
+      <p>i am the Index component</p>
+    </>
   );
 }
 

@@ -5,6 +5,8 @@ import {
   Route
 } from "react-router-dom";
 
+import "./App.css";
+
 import Link from "./components/Link";
 
 import List from "./pages/List";
@@ -14,11 +16,6 @@ import Index from "./pages/Index";
 function App() {
   return (
     <Router>
-      <nav>
-        <Link to="/">Index</Link>
-        <Link to="/list">Breed List</Link>
-        <Link to="/quiz">Breed Quiz</Link>
-      </nav>
       <Switch>
         <Route path="/list">
           <List />
