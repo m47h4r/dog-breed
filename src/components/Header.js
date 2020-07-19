@@ -4,12 +4,18 @@ import "./Header.css";
 
 import Link from "./Link";
 
-function Header () {
+const headerData = [
+  { id: "index", url: "/", text: "Home" },
+  { id: "list", url: "/list", text: "Breed List" },
+  { id: "quiz", url: "/quiz", text: "Breed Quiz" },
+];
+
+function Header({ currentPage }) {
   return (
     <nav className="navigation">
-      <Link to="/">Home</Link>
-      <Link to="/list">Breed List</Link>
-      <Link to="/quiz">Breed Quiz</Link>
+      {headerData.map((link) => (
+        currentPage !== link.id ? (<Link to={link.url}>{link.text}</Link>) : null
+      ))}
     </nav>
   );
 }

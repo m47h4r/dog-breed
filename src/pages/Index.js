@@ -7,7 +7,7 @@ import Header from "../components/Header";
 function Index() {
   return (
     <div className="index-wrapper">
-      <Header />
+      <Header currentPage="index"/>
     </div>
   );
 }

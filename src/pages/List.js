@@ -7,7 +7,7 @@ import Header from "../components/Header";
 function List() {
   return (
     <>
-      <Header />
+      <Header currentPage="list" />
       <p>i am the breedlist component</p>
     </>
   );

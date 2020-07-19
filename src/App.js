@@ -7,8 +7,6 @@ import {
 
 import "./App.css";
 
-import Link from "./components/Link";
-
 import List from "./pages/List";
 import Quiz from "./pages/Quiz";
 import Index from "./pages/Index";
