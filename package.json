@@ -1,7 +1,7 @@
 {
   "name": "dog-breed",
   "version": "0.1.0",
-  "homepage": "http://m47h4r.github.io/dog-breed",
+  "homepage": "https://m47h4r.github.io/dog-breed",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
