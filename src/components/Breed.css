@@ -17,4 +17,8 @@
 }
 .breed:hover {
   transform: scale(1.1, 1.1);
+  z-index: 10;
+}
+.breed[data-image-number="0"]:hover {
+  transform: none;
 }

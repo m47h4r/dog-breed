@@ -21,7 +21,7 @@ function Breed({ name }) {
   return (
     <button
       className="breed"
-      data-breed={name}
+      data-image-number={imageIndex}
       onClick={() => setImageIndex(generateRandomNumber())}
       style={{
         backgroundImage:
