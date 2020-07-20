@@ -1,16 +1,25 @@
+.breed-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 0;
+    place-items: center;
+}
+
 .breed {
-    border: 1px solid black;
+    min-height: 200px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--black-tran-1);
+    display: grid;
+    place-items: center;
+    color: var(--black);
 }
 
 .sub-breed {
-    border: 1px solid black;
+    background-color: var(--black-tran-1);
 }
 
 .entity {
-    border: 1px solid black;
-}
-
-.breed, .sub-breed, .entity {
-    padding: 5px;
-    margin: 5px;
+    /* border: 1px solid black; */
 }
