@@ -4,4 +4,5 @@
   justify-content: center;
   align-items: center;
   padding: 5px 0px;
+  background-color: var(--black-tran-1);
 }

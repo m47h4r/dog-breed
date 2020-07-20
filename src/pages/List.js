@@ -9,7 +9,6 @@ import config from "../config";
 
 function useDogReducer() {
   const initState = {
-    isLoading: false,
     breedList: null,
   };
 
@@ -17,8 +16,6 @@ function useDogReducer() {
 
   function reducer(state, action) {
     switch (action.type) {
-      case "SET-LOADING":
-        return { ...state, isLoading: true };
       case "SET-BREEDLIST":
         return { ...state, breedList: action.data };
       default:
@@ -33,11 +30,11 @@ function List() {
   const [state, dispatch] = useDogReducer();
 
   useEffect(() => {
-    dispatch({ type: "SET-LOADING" });
+    console.log(' i am in use effect of the list component ')
     fetch(config.api.breedListURL)
       .then((response) => response.json())
       .then((data) => dispatch({ type: "SET-BREEDLIST", data: data }));
-  }, []);
+  }, [dispatch]);
 
   return (
     <>

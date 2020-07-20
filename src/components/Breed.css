@@ -11,6 +11,7 @@
   color: var(--white);
   font-size: 1.2rem;
   background-size: cover;
+  background-position: center center;
   cursor: pointer;
   transition: all 1s ease-out;
   overflow: hidden;
@@ -21,4 +22,12 @@
 }
 .breed[data-image-number="-1"]:hover {
   transform: none;
+}
+
+.name {
+  opacity: 1;
+  transition: all 1s ease-out;
+}
+.breed:hover .name {
+  opacity: 0;
 }

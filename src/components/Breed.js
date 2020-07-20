@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useReducer } from "react";
+import React, { useEffect, useReducer } from "react";
 
 import "./Breed.css";
 
@@ -44,7 +44,7 @@ function Breed({ name }) {
     )
       .then((response) => response.json())
       .then((data) => dispatch({ type: "SET-IMAGE-URLS", data: data }));
-  }, []);
+  }, [dispatch, name]);
 
   return (
     <button
@@ -52,18 +52,16 @@ function Breed({ name }) {
       data-image-number={state.currentImageIndex}
       onClick={() => dispatch({ type: "INCREMENT-IMAGE-INDEX" })}
       style={{
-        backgroundImage:
-          "linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))," +
-          `url(${
-            state.imageURLs !== null
-              ? state.currentImageIndex !== -1
-                ? state.imageURLs.message[state.currentImageIndex]
-                : "none"
+        backgroundImage: `url(${
+          state.imageURLs !== null
+            ? state.currentImageIndex !== -1
+              ? state.imageURLs.message[state.currentImageIndex]
               : "none"
-          })`,
+            : "none"
+        })`,
       }}
     >
-      <div className="entity">{name}</div>
+      <div className="name">{name}</div>
     </button>
   );
 }
