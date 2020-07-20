@@ -5,7 +5,7 @@
   padding: 0;
   outline: none;
   border: none;
-  background-color: var(--black-tran-1);
+  background-color: transparent;
   display: grid;
   place-items: center;
   color: var(--white);
