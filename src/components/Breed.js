@@ -36,8 +36,6 @@ function useBreedReducer() {
 }
 
 function Breed({ name }) {
-  // let [imageIndex, setImageIndex] = useState(-1);
-  // const [images, setImages] = useState(null);
   const [state, dispatch] = useBreedReducer();
 
   useEffect(() => {
