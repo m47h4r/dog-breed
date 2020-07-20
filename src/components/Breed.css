@@ -13,6 +13,8 @@
   background-size: cover;
   cursor: pointer;
   transition: all 1s ease-out;
+  overflow: hidden;
 }
 .breed:hover {
+  transform: scale(1.1, 1.1);
 }
