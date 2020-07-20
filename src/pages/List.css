@@ -4,22 +4,3 @@
     grid-gap: 0;
     place-items: center;
 }
-
-.breed {
-    min-height: 200px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: var(--black-tran-1);
-    display: grid;
-    place-items: center;
-    color: var(--black);
-}
-
-.sub-breed {
-    background-color: var(--black-tran-1);
-}
-
-.entity {
-    /* border: 1px solid black; */
-}

@@ -3,13 +3,14 @@ import React, { useEffect, useReducer } from "react";
 import "./List.css";
 
 import Header from "../components/Header";
+import Breed from "../components/Breed";
 
 import config from "../config";
 
 function useDogReducer() {
   const initState = {
     isLoading: false,
-    data: null,
+    breedList: null,
   };
 
   const [state, dispatch] = useReducer(reducer, initState);
@@ -18,8 +19,8 @@ function useDogReducer() {
     switch (action.type) {
       case "SET-LOADING":
         return { ...state, isLoading: true };
-      case "SET-DATA":
-        return { ...state, data: action.data };
+      case "SET-BREEDLIST":
+        return { ...state, breedList: action.data };
       default:
         return { ...state };
     }
@@ -35,18 +36,16 @@ function List() {
     dispatch({ type: "SET-LOADING" });
     fetch(config.api.breedListURL)
       .then((response) => response.json())
-      .then((data) => dispatch({ type: "SET-DATA", data: data }));
+      .then((data) => dispatch({ type: "SET-BREEDLIST", data: data }));
   }, []);
 
   return (
     <>
       <Header currentPage="list" />
       <div className="breed-wrapper">
-        {state.data
-          ? Object.keys(state.data.message).map((breed) => (
-              <div className="breed">
-                <div className="entity">{breed}</div>
-              </div>
+        {state.breedList
+          ? Object.keys(state.breedList.message).map((breed) => (
+              <Breed name={breed} />
             ))
           : null}
       </div>
