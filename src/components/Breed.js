@@ -49,6 +49,7 @@ function Breed({ name }) {
   return (
     <button
       className="breed"
+      data-testid="breed-button"
       data-image-number={state.currentImageIndex}
       onClick={() => dispatch({ type: "INCREMENT-IMAGE-INDEX" })}
       style={{
