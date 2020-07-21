@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "74e3a8bce38720668b433873e01668da",
+    "revision": "3082510f28cff756405081b1e99ef227",
     "url": "/dog-breed/index.html"
   },
   {
-    "revision": "f5e2ff0cd02f086c8e22",
-    "url": "/dog-breed/static/css/main.7923469b.chunk.css"
+    "revision": "22fb556d86072d8e6c23",
+    "url": "/dog-breed/static/css/main.7b1242a3.chunk.css"
   },
   {
     "revision": "715e7cbbfd3cb307fb0a",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dog-breed/static/js/2.a2e27deb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f5e2ff0cd02f086c8e22",
-    "url": "/dog-breed/static/js/main.f8f742ec.chunk.js"
+    "revision": "22fb556d86072d8e6c23",
+    "url": "/dog-breed/static/js/main.df772e90.chunk.js"
   },
   {
     "revision": "43baa389bc2733a15ffb",

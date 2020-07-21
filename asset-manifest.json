@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/dog-breed/static/css/main.7923469b.chunk.css",
-    "main.js": "/dog-breed/static/js/main.f8f742ec.chunk.js",
-    "main.js.map": "/dog-breed/static/js/main.f8f742ec.chunk.js.map",
+    "main.css": "/dog-breed/static/css/main.7b1242a3.chunk.css",
+    "main.js": "/dog-breed/static/js/main.df772e90.chunk.js",
+    "main.js.map": "/dog-breed/static/js/main.df772e90.chunk.js.map",
     "runtime-main.js": "/dog-breed/static/js/runtime-main.a39a427e.js",
     "runtime-main.js.map": "/dog-breed/static/js/runtime-main.a39a427e.js.map",
     "static/js/2.a2e27deb.chunk.js": "/dog-breed/static/js/2.a2e27deb.chunk.js",
     "static/js/2.a2e27deb.chunk.js.map": "/dog-breed/static/js/2.a2e27deb.chunk.js.map",
     "index.html": "/dog-breed/index.html",
-    "precache-manifest.cc467ab06c6ffcd84b12afae6a8d26ae.js": "/dog-breed/precache-manifest.cc467ab06c6ffcd84b12afae6a8d26ae.js",
+    "precache-manifest.9c2e54e249e30a73e50d4bfe1035c85b.js": "/dog-breed/precache-manifest.9c2e54e249e30a73e50d4bfe1035c85b.js",
     "service-worker.js": "/dog-breed/service-worker.js",
-    "static/css/main.7923469b.chunk.css.map": "/dog-breed/static/css/main.7923469b.chunk.css.map",
+    "static/css/main.7b1242a3.chunk.css.map": "/dog-breed/static/css/main.7b1242a3.chunk.css.map",
     "static/js/2.a2e27deb.chunk.js.LICENSE.txt": "/dog-breed/static/js/2.a2e27deb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a39a427e.js",
     "static/js/2.a2e27deb.chunk.js",
-    "static/css/main.7923469b.chunk.css",
-    "static/js/main.f8f742ec.chunk.js"
+    "static/css/main.7b1242a3.chunk.css",
+    "static/js/main.df772e90.chunk.js"
   ]
 }
