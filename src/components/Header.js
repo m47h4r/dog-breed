@@ -14,7 +14,7 @@ function Header({ currentPage }) {
   return (
     <nav className="navigation">
       {headerData.map((link) =>
-        currentPage !== link.id ? <Link to={link.url}>{link.text}</Link> : null
+        currentPage !== link.id ? <Link to={link.url} key={link.id}>{link.text}</Link> : null
       )}
     </nav>
   );
