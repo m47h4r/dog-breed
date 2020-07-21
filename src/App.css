@@ -2,7 +2,7 @@
   --white: #e4e3e3;
   --shade-1: #84a9ac;
   --shade-2: #3b6978;
-  --black: #204051;
+  --black: #000;
   --black-tran-1: rgba(0, 0, 0, 0.3);
   --transition-duration: .5s;
   height: 100vh;
@@ -16,7 +16,6 @@ body {
 #root {
   height: 100%;
   width: 100%;
-  background-color: var(--black-tran-1);
 }
 
 * {

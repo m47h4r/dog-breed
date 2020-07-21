@@ -61,7 +61,7 @@ function Breed({ name }) {
         })`,
       }}
     >
-      <div className="name">{name}</div>
+      <div className={state.currentImageIndex !== -1 ? "name name--readable" : "name"}>{name}</div>
     </button>
   );
 }
