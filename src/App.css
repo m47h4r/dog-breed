@@ -4,7 +4,7 @@
   --shade-2: #3b6978;
   --black: #000;
   --black-tran-1: rgba(0, 0, 0, 0.3);
-  --transition-duration: .5s;
+  --transition-duration: 0.5s;
   height: 100vh;
 }
 

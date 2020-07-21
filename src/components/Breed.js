@@ -4,7 +4,7 @@ import "./Breed.css";
 
 import config from "../config";
 
-function useBreedReducer() {
+export function useBreedReducer() {
   const initState = {
     currentImageIndex: -1,
     imageURLs: null,
@@ -61,7 +61,13 @@ function Breed({ name }) {
         })`,
       }}
     >
-      <div className={state.currentImageIndex !== -1 ? "name name--readable" : "name"}>{name}</div>
+      <div
+        className={
+          state.currentImageIndex !== -1 ? "name name--readable" : "name"
+        }
+      >
+        {name}
+      </div>
     </button>
   );
 }
