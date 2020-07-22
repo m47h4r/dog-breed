@@ -7,7 +7,7 @@ import Breed from "../components/Breed";
 
 import config from "../config";
 
-function useDogReducer() {
+export function useBreedListReducer() {
   const initState = {
     breedList: null,
   };
@@ -27,10 +27,10 @@ function useDogReducer() {
 }
 
 function List() {
-  const [state, dispatch] = useDogReducer();
+  const [state, dispatch] = useBreedListReducer();
 
   useEffect(() => {
-    console.log(' i am in use effect of the list component ')
+    console.log(" i am in use effect of the list component ");
     fetch(config.api.breedListURL)
       .then((response) => response.json())
       .then((data) => dispatch({ type: "SET-BREEDLIST", data: data }));
