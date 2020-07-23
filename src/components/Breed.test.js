@@ -1,6 +1,6 @@
 import React from "react";
 import Breed from "./Breed";
-import { render, screen } from "@testing-library/react";
+import { render, screen, act } from "@testing-library/react";
 
 import { useBreedReducer } from "./Breed";
 

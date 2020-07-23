@@ -30,7 +30,6 @@ function List() {
   const [state, dispatch] = useBreedListReducer();
 
   useEffect(() => {
-    console.log(" i am in use effect of the list component ");
     fetch(config.api.breedListURL)
       .then((response) => response.json())
       .then((data) => dispatch({ type: "SET-BREEDLIST", data: data }));
@@ -39,10 +38,10 @@ function List() {
   return (
     <>
       <Header currentPage="list" />
-      <div className="breed-wrapper">
+      <div data-testid="breed-wrapper" className="breed-wrapper">
         {state.breedList
           ? Object.keys(state.breedList.message).map((breed) => (
-              <Breed name={breed} />
+              <Breed name={breed} key={breed} />
             ))
           : null}
       </div>
